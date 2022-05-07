@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "utr"
+version = "0.1.0"
+description = "A python library to interact with UTR API"
+authors = [
+  "Luis Rueda <userlerueda@gmail.com>"
+]
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+daiquiri = "^3.0.1"
+environs = ">=9.5.0"
+requests = "^2.27.1"
+pandas = "^1.4.2"
+openpyxl = "^3.0.9"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.10.1"
+black = "^22.3.0"
+pytest = "^7.1.2"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | \.docker
+    | \*.egg-info
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79
+force_grid_wrap = 0
+multi_line_output = 3
+use_parentheses = true
+include_trailing_comma = true
+ensure_newline_before_comments = true
+
+[tool.poetry.scripts]
+utr = "utr.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"
