@@ -1,19 +1,19 @@
-import logging
+from pydantic import BaseSettings
 
-from environs import Env
 
-env = Env()
+class Settings(BaseSettings):
+    """ "Settings."""
 
-LOG_LEVELS = {
-    "DEBUG": logging.DEBUG,
-    "INFO": logging.INFO,
-    "WARNING": logging.WARNING,
-    "ERROR": logging.ERROR,
-    "CRITICAL": logging.CRITICAL,
-}
-LOG_LEVEL_STR = env.str("LOG_LEVEL", "INFO").upper()
-LOG_LEVEL = LOG_LEVELS.get(LOG_LEVEL_STR)
+    email: str
+    password: str
+    url: str = "https://app.universaltennis.com/api"
+    club_id: int = 12610
 
-UTR_URL = "https://app.universaltennis.com/api"
-UTR_EMAIL = env.str("UTR_EMAIL")
-UTR_PASSWORD = env.str("UTR_PASSWORD")
+    class Config:
+        """Config."""
+
+        env_prefix = "utr_"
+        fields = {
+            "utr_email": {"env": "utr_email"},
+            "utr_password": {"env": "utr_password"},
+        }

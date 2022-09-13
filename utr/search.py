@@ -8,18 +8,6 @@ from utr import UTR
 LOGGER = daiquiri.getLogger(__name__)
 
 
-def add_subparsers(parsers):
-    """Add the subparsers for this module to a subparsers object."""
-    parser = parsers.add_parser("search")
-    subparsers = parser.add_subparsers()
-    players_parser = subparsers.add_parser("players")
-    players_parser.add_argument("query", help="Search query for players")
-    players_parser.add_argument(
-        "-T", "--top", default=50, help="Top N players to show", type=int
-    )
-    players_parser.set_defaults(func=players)
-
-
 def main(args):
     """Main function."""
     daiquiri.setup(level=args.log_level)
