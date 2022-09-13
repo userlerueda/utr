@@ -6,15 +6,6 @@ from utr import UTR
 LOGGER = daiquiri.getLogger(__name__)
 
 
-def add_parser(subparsers):
-    """Add the parser for this module to a subparsers object."""
-    parser = subparsers.add_parser("club")
-    parser.add_argument(
-        "-O", "--output", default="club.xlsx", help="Output file."
-    )
-    parser.set_defaults(func=main)
-
-
 def main(args):
     """Main function."""
     # my_args = args.get_args()
