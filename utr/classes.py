@@ -69,6 +69,104 @@ class UTR(object):
 
         return response.json()
 
+    def get_score(self, score_id: int) -> dict:
+        """Get Score ID."""
+
+        uri = f"/v2/score/{score_id}"
+        url = f"{self.url}{uri}"
+
+        response = self.session.get(url)
+        if response.ok is False:
+            LOGGER.warning(
+                "Problem while retrieving score: (%s) %s",
+                response.status_code,
+                response.text,
+            )
+            response.raise_for_status()
+
+        return response.json()
+
+    def get_club_results(
+        self,
+        club_id: int,
+        type: str = "s",
+        start: int = 0,
+        count: int = 1000,
+        optimized: bool = True,
+    ):
+        """Get Club Results"""
+        uri = f"/v1/club/{club_id}/clubresults"
+        url = f"{self.url}{uri}"
+        params = {
+            "type": type,
+            "start": start,
+            "count": count,
+            "optimized": optimized,
+        }
+        response = self.session.get(url, params=params)
+        response.raise_for_status()
+        return response.json()
+
+    def post_result(
+        self,
+        club_id: int,
+        date: str,
+        score: dict,
+        exclude_from_rating: bool = False,
+        dry_run: bool = False,
+        result_id: int = None,
+    ):
+        """Post Club Match Results."""
+        uri = "/v1/score/submit"
+        url = f"{self.url}{uri}"
+        LOGGER.info("Updating result: %s", result_id)
+
+        payload = {
+            "date": date,
+            "resultSourceType": 1,
+            "excludeFromRating": exclude_from_rating,
+            "completed": True,
+            "clubId": f"{club_id}",
+        } | score
+        if result_id:
+            payload["resultId"] = result_id
+        if dry_run:
+            LOGGER.info(json.dumps(payload, indent=2))
+        else:
+            response = self.session.post(url, json=payload)
+            # response.raise_for_status()
+            if response.ok:
+                winner1_name = "{} {}".format(
+                    response.json()["result"]["players"]["winner1"][
+                        "firstName"
+                    ],
+                    response.json()["result"]["players"]["winner1"][
+                        "lastName"
+                    ],
+                )
+                loser1_name = "{} {}".format(
+                    response.json()["result"]["players"]["loser1"][
+                        "firstName"
+                    ],
+                    response.json()["result"]["players"]["loser1"]["lastName"],
+                )
+                LOGGER.info(
+                    "Reported date was: %s", response.json()["result"]["date"]
+                )
+                LOGGER.info("Reported winner was: %s", winner1_name)
+                LOGGER.info("Reported loser was: %s", loser1_name)
+                LOGGER.info(
+                    "Reported score was: %s",
+                    response.json()["result"]["score"],
+                )
+                LOGGER.debug(json.dumps(response.json(), indent=2))
+            else:
+                LOGGER.warning(
+                    "Report was not submitted: (%s )%s",
+                    response.status_code,
+                    response.text,
+                )
+
     def search_clubs(self, query: str, top: int = None) -> dict:
         """Get Clubs."""
         uri = "/v2/search/clubs"

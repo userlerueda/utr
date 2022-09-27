@@ -1,0 +1,19 @@
+{
+  "date": "2022-07-27T13:33:05.000Z",
+  "teamType": "S",
+  "isWinner": true,
+  "winner1": { "id": 2785793 },
+  "loser1": { "id": 2735950 },
+  "winnerSet1": "3",
+  "loserSet1": "3",
+  "winnerSet2": "",
+  "loserSet2": "",
+  "winnerSet3": "",
+  "loserSet3": "",
+  "resultSourceType": 1,
+  "excludeFromRating": false,
+  "completed": true,
+  "matchOutcome": "retired",
+  "clubId": "12610",
+  "resultId": 34588403
+}

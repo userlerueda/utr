@@ -1,17 +1,20 @@
 {
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": ".venv/bin/black",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": ".venv/bin/black",
+  "editor.formatOnSave": true,
+  "[python]": {
     "editor.formatOnSave": true,
-    "[python]": {
-      "editor.formatOnSave": true,
-      "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-      }
-    },
-    "markdownlint.config": {
-      "MD024": {
-        "allow_different_nesting": true,
-        "siblings_only": true
-      }
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
     }
-  }
+  },
+  "markdownlint.config": {
+    "MD024": {
+      "allow_different_nesting": true,
+      "siblings_only": true
+    }
+  },
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}

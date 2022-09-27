@@ -1,0 +1,18 @@
+{
+  "date": "2022-05-14T22:56:58.000Z",
+  "teamType": "S",
+  "isWinner": true,
+  "winner1": { "id": 2848373 },
+  "loser1": { "id": 3526852 },
+  "winnerSet1": "",
+  "loserSet1": "",
+  "winnerSet2": "",
+  "loserSet2": "",
+  "winnerSet3": "",
+  "loserSet3": "",
+  "resultSourceType": 1,
+  "excludeFromRating": false,
+  "completed": true,
+  "matchOutcome": "withdrew",
+  "clubId": "12610"
+}
