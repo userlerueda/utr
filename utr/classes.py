@@ -4,6 +4,8 @@ __author__ = "Luis Rueda"
 __email__ = "userlerueda@gmail.com"
 __maintainer__ = "Luis Rueda <userlerueda@gmail.com>"
 
+import json
+
 import daiquiri
 import requests
 
