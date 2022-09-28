@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     password: str
     url: str = "https://app.universaltennis.com/api"
     club_id: int = 12610
+    log_level: str = "INFO"
 
     class Config:
         """Config."""
