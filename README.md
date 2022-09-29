@@ -99,6 +99,8 @@ $ utr results 12610
 
 ## Credits
 
+Credits to https://blakestevenson.github.io/utr-api-docs/ for trying to document the API.
+
 ## License
 
 This project is covered under the terms described in [LICENSE](LICENSE).
