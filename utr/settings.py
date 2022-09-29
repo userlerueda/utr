@@ -6,7 +6,8 @@ class Settings(BaseSettings):
 
     email: str
     password: str
-    url: str = "https://app.universaltennis.com/api"
+    url: str = "https://api.universaltennis.com"
+    auth_url: str = "https://app.universaltennis.com/api"
     club_id: int = 12610
     log_level: str = "INFO"
 
