@@ -18,7 +18,9 @@ def convert_to_utr_date(
     date: str, time: str = None, timezone: str = "-0500"
 ) -> str:
     """Convert CCP Date to UTR Date."""
-
+    LOGGER.debug(
+        "Converting the following date: '%s' and time: '%s'", date, time
+    )
     if time:
         date_time = f"{date}T{time} {timezone}"
     else:

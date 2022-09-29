@@ -8,7 +8,7 @@ from unittest import TestCase
 
 import pytest
 
-from utr.ccp import ccp_score_to_utr_score, get_set_score
+from utr.ccp import get_set_score
 from utr.util import (
     convert_to_utr_date,
     from_string_score,
@@ -16,14 +16,30 @@ from utr.util import (
     to_utr_score,
 )
 
-p1s = "player1_score"
-p2s = "player2_score"
-tls = "tiebreak_low_score"
-wt = "was_tiebreak"
-w = "winner"
-
 
 class TestUtilities:
+    """Test Utilities Class."""
+
+    @pytest.mark.parametrize(
+        "date, time, utr_date",
+        [
+            ("18/6/2022	9:00", None, "2022-06-18T14:00:00Z"),
+            ("18/6/2022", "9:00", "2022-06-18T14:00:00Z"),
+            ("Sat. 17/09/2022 5:00 PM", None, "2022-09-17T22:00:00Z"),
+            ("Sat. 17/09/2022 17:00", None, "2022-09-17T22:00:00Z"),
+            ("Sat. 17/09/2022", "5:00 PM", "2022-09-17T22:00:00Z"),
+            ("Sat. 17/09/2022", "17:00", "2022-09-17T22:00:00Z"),
+        ],
+    )
+    def test_convert_to_utr_date(self, date, time, utr_date):
+        """
+        Test convert_to_utr_date
+        """
+        if time:
+            assert utr_date == convert_to_utr_date(date, time=time)
+        else:
+            assert utr_date == convert_to_utr_date(date)
+
     @pytest.mark.parametrize(
         "score_array, score",
         [
@@ -128,47 +144,3 @@ class TestUtilities:
         """
 
         TestCase().assertListEqual(parsed_score, get_set_score(set_score))
-
-
-class TestConvertToUTRScore:
-    @pytest.mark.parametrize(
-        "score, player1, player2, winner, loser, winnerSet1,loserSet1, winnerSet2, loserSet2, winnerSet3, loserSet3",
-        [
-            ("60 60", 1, 2, 1, 2, 6, 0, 6, 0, "", ""),
-            ("75 60", 1, 2, 1, 2, 7, 5, 6, 0, "", ""),
-            ("76 (5) 60", 1, 2, 1, 2, 7, 5, 6, 0, "", ""),
-        ],
-    )
-    def test_valid_ccp_score_to_utr_score(
-        self,
-        score,
-        player1,
-        player2,
-        winner,
-        loser,
-        winnerSet1,
-        loserSet1,
-        winnerSet2,
-        loserSet2,
-        winnerSet3,
-        loserSet3,
-    ):
-        """
-        Test valid ccp_score_to_utr_score
-        """
-
-        utr_score = {
-            "teamType": "S",
-            "isWinner": True,
-            "winner1": {"id": winner},
-            "loser1": {"id": loser},
-            "winnerSet1": winnerSet1,
-            "loserSet1": loserSet1,
-            "winnerSet2": winnerSet2,
-            "loserSet2": loserSet2,
-            "winnerSet3": winnerSet3,
-            "loserSet3": loserSet3,
-        }
-        TestCase().assertDictEqual(
-            utr_score, ccp_score_to_utr_score(player1, player2, score)
-        )
