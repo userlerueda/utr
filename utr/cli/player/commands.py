@@ -21,5 +21,5 @@ def player(ctx, player_id):
     """Player commands"""
     my_utr: UTR = ctx.obj["my_utr"]
     my_utr.login()
-    player_stats = my_utr.get_player(player_id, stats=True)
+    player_stats = my_utr.get_player(player_id)
     print(json.dumps(player_stats, indent=2))
