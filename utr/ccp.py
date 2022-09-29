@@ -11,47 +11,6 @@ import daiquiri
 LOGGER = daiquiri.getLogger(__name__)
 
 
-def ccp_score_to_utr_score(
-    player1_id: int,
-    player2_id: int,
-    score: str,
-) -> str:
-    """Convert CCP Score to UTR Score."""
-    regular_set = r"[467][0-5]|[0-5][467]"
-    regular_set_hyphen = r"[0-7]\-[0-5]|[0-5]\-[0-7]"
-    tiebreak_set = r"[6-7][6-7]\s\(\d+\)"
-    matchtiebreak = r"\d{2,}\-\d+|\d\-\d{2,}"
-
-    regex = rf"({regular_set}|{tiebreak_set}|{matchtiebreak})"
-    score_list = re.findall(regex, score)
-
-    LOGGER.info("Result is %s sets. Score: '%s'", len(score_list), score)
-    results = {
-        "player1": {"id": int(player1_id), "sets_won": 0},
-        "player2": {"id": int(player2_id), "sets_won": 0},
-        "total_sets": len(score_list),
-        "score": {},
-        "winner": None,
-        "loser": None,
-    }
-    if 2 <= len(score_list) < 4:
-        current_set = 1
-        for set_score in score_list:
-            parsed_set_score = get_set_score(set_score)
-            winning_player = parsed_set_score["winner"]
-            results[winning_player]["sets_won"] += 1
-            results["score"][current_set] = parsed_set_score
-            current_set += 1
-
-        populate_winner(results)
-
-    else:
-        LOGGER.error("Invalid score: '%s'", score)
-        raise Exception("Invalid score %s", score)
-
-    return convert_to_utr_score(results)
-
-
 def convert_to_utr_score(score: dict) -> dict:
     """Convert interim score to UTR score."""
     winner = score["winner"]

@@ -22,12 +22,13 @@ class UTR(object):
         self.email = email
         self.password = password
         self.url = Settings().dict().get("url")
+        self.auth_url = Settings().dict().get("auth_url")
         self.session = requests.Session()
 
     def login(self) -> None:
         """Login to UTR."""
         uri = "/v1/auth/login"
-        url = f"{self.url}{uri}"
+        url = f"{self.auth_url}{uri}"
         LOGGER.debug("Using URL: %s", url)
         headers = {"Content-Type": "application/json"}
         body = {"email": self.email, "password": self.password}
@@ -74,8 +75,9 @@ class UTR(object):
     def get_score(self, score_id: int) -> dict:
         """Get Score ID."""
 
-        uri = f"/v2/score/{score_id}"
+        uri = f"/v1/score/{score_id}"
         url = f"{self.url}{uri}"
+        # url = f"https://api.universaltennis.com/v1/score/{score_id}"
 
         response = self.session.get(url)
         if response.ok is False:
