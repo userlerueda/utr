@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "utr"
-version = "1.1.0"
+version = "1.1.1"
 description = "A python library to interact with UTR API"
 authors = [
   "Luis Rueda <userlerueda@gmail.com>"
