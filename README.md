@@ -7,6 +7,12 @@ Universal Tennis Rating python library
 
 ## Installation
 
+To install the latest version:
+
+```bash
+pip install utr
+```
+
 To install the library from GitHub:
 
 ```bash
