@@ -68,7 +68,7 @@ def ccp_player(log_level: str, player_id: str, stats: bool):
     my_utr = UTR(email, password)
     my_utr.login()
 
-    player = my_utr.get_player(player_id, stats=stats)
+    player = my_utr.get_player(player_id)
 
     # df = pd.json_normalize(members)
 
