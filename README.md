@@ -5,13 +5,17 @@ Universal Tennis Rating python library
 
 ## Description
 
-
-
 ## Installation
 
-To install the library from Gitub:
+To install the latest version:
 
+```bash
+pip install utr
 ```
+
+To install the library from GitHub:
+
+```bash
 pip install git+https://github.com/userlerueda/utr.git
 ```
 
