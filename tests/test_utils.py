@@ -95,7 +95,19 @@ class TestUtilities:
                 },
             ),
             (
-                [],
+                [[6, 3], [6, 3, 5, 6]],
+                {
+                    "isWinner": True,
+                    "winnerSet1": 6,
+                    "loserSet1": 3,
+                    "winnerSet2": "",
+                    "loserSet2": "",
+                    "winnerSet3": "",
+                    "loserSet3": "",
+                },
+            ),
+            (
+                ["Walkover"],
                 {
                     "isWinner": True,
                     "winnerSet1": "",
@@ -105,6 +117,18 @@ class TestUtilities:
                     "winnerSet3": "",
                     "loserSet3": "",
                     "matchOutcome": "withdrew",
+                },
+            ),
+            (
+                ["Not played"],
+                {
+                    "isWinner": False,
+                    "winnerSet1": "",
+                    "loserSet1": "",
+                    "winnerSet2": "",
+                    "loserSet2": "",
+                    "winnerSet3": "",
+                    "loserSet3": "",
                 },
             ),
         ],

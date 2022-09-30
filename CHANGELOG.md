@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add option to invite player to club (@userlerueda) #9
 
+### Fixed
+
+- Fixes scores for Walkover (@userlerueda)
+
 ## v1.1.1
 
 ### Chores
