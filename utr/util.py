@@ -123,28 +123,29 @@ def to_utr_score(score_array) -> dict:
         "loserSet3": "",
     }
 
-    if len(score_array) == 0:
-        # Process Walkover
-        score["matchOutcome"] = "withdrew"
-        return score
-
-    set_number = 1
-    for set_score in score_array:
-        if not isinstance(set_score, list):
-            return score
-        if len(set_score) == 2:
-            if set_score[0] >= 10:
-                score[f"winnerSet{set_number}"] = 1
-                score[f"loserSet{set_number}"] = 0
-                score[f"tiebreakerSet{set_number}"] = set_score[1]
-            else:
+    if isinstance(score_array, list):
+        set_number = 1
+        for set_score in score_array:
+            LOGGER.debug("Got the following score %s", set_score)
+            if isinstance(set_score, str):
+                if set_score == "Walkover":
+                    score["matchOutcome"] = "withdrew"
+                elif set_score == "Not played":
+                    score["isWinner"] = False
+            if len(set_score) == 2:
+                if set_score[0] >= 10:
+                    score[f"winnerSet{set_number}"] = 1
+                    score[f"loserSet{set_number}"] = 0
+                    score[f"tiebreakerSet{set_number}"] = set_score[1]
+                else:
+                    score[f"winnerSet{set_number}"] = set_score[0]
+                    score[f"loserSet{set_number}"] = set_score[1]
+            elif len(set_score) == 3:
                 score[f"winnerSet{set_number}"] = set_score[0]
                 score[f"loserSet{set_number}"] = set_score[1]
-        elif len(set_score) == 3:
-            score[f"winnerSet{set_number}"] = set_score[0]
-            score[f"loserSet{set_number}"] = set_score[1]
-            score[f"tiebreakerSet{set_number}"] = set_score[2]
-        else:
-            return score
-        set_number += 1
+                score[f"tiebreakerSet{set_number}"] = set_score[2]
+            else:
+                return score
+            set_number += 1
+
     return score
