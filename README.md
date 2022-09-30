@@ -95,7 +95,37 @@ $ utr results 12610
 +--------------+------------+-------------+---------------------+----------------------------------+-------------+--------------------------------+------------+--------------+---------------------+------------------+
 ```
 
+#### Inviting Players to Club
+
+```bash
+❯ utr player invite-to-club 12610 2938046
+[
+  {
+    "email": "xxxxxxx@gmail.com",
+    "invited": false,
+    "result": "Member Already Invited"
+  }
+]
+```
+
 ### Using as a Library
+
+The package can also be used directly as a library
+
+To do so, first import utr package and then create an object from the UTR class:
+
+```python
+from utr import UTR
+
+my_utr = UTR(email, password)
+my_utr.login()
+```
+
+#### Inviting Players to Club
+
+```python
+operation = my_utr.invite_player_to_club(club_id, player_id)
+```
 
 ## Credits
 

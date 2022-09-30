@@ -5,6 +5,7 @@ __email__ = "userlerueda@gmail.com"
 __maintainer__ = "Luis Rueda <userlerueda@gmail.com>"
 
 import json
+from typing import List
 
 import daiquiri
 import requests
@@ -110,6 +111,37 @@ class UTR(object):
         response = self.session.get(url, params=params)
         response.raise_for_status()
         return response.json()
+
+    def invite_player_to_club(
+        self, club_id: int, player_id: int, dry_run: bool = False
+    ):
+        """Invite members to club."""
+        LOGGER.debug("Getting member_id for player_id: %s", player_id)
+        player = self.get_player(player_id)
+        member_id = player.get("memberId")
+        if member_id:
+            LOGGER.debug(
+                "Inviting player '%s %s' with memberId: '%s' to clubId: '%s'",
+                player.get("firstName"),
+                player.get("lastName"),
+                member_id,
+                club_id,
+            )
+        else:
+            LOGGER.error(
+                "There was a problem retrieving memberId. Player details are: '%s'",
+                player,
+            )
+        uri = f"/v1/club/{club_id}/members"
+        url = f"{self.url}{uri}"
+        payload = [{"memberId": member_id}]
+        if dry_run:
+            LOGGER.info("Would be sending '%s' to '%s'", payload, uri)
+            return {}
+        else:
+            response = self.session.post(url, json=payload)
+            response.raise_for_status()
+            return response.json()
 
     def post_result(
         self,
