@@ -1,0 +1,18 @@
+{
+  "date": "2022-10-01T01:31:56.293Z",
+  "teamType": "D",
+  "isWinner": true,
+  "winner1": { "id": 2742658 },
+  "loser1": { "id": 1312175 },
+  "winner2": { "id": 2873886 },
+  "loser2": { "id": 2918693 },
+  "winnerSet1": "2",
+  "loserSet1": "6",
+  "winnerSet2": "6",
+  "loserSet2": "3",
+  "winnerSet3": "6",
+  "loserSet3": "1",
+  "resultSourceType": 1,
+  "excludeFromRating": false,
+  "completed": true
+}

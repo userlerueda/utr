@@ -9,7 +9,7 @@ import daiquiri
 from tabulate import tabulate
 
 from utr import UTR
-from utr.util import from_club_results
+from utr.util import from_utr_club_results
 
 LOGGER = daiquiri.getLogger(__name__)
 
@@ -47,7 +47,7 @@ def results(ctx, club_id: int, player_id: int):
                         "loser_id": result["players"]["loser1"]["id"],
                         "sourceType": result["sourceType"],
                         "excludeFromRating": result["excludeFromRating"],
-                        "score": from_club_results(result),
+                        "score": from_utr_club_results(result),
                     }
                 )
 
@@ -73,7 +73,7 @@ def results(ctx, club_id: int, player_id: int):
                         "loser_id": result["players"]["loser1"]["id"],
                         "sourceType": result["sourceType"],
                         "excludeFromRating": result["excludeFromRating"],
-                        "score": from_club_results(result),
+                        "score": from_utr_club_results(result),
                     }
                 )
 

@@ -12,6 +12,7 @@ from utr.ccp import get_set_score
 from utr.util import (
     convert_to_utr_date,
     from_string_score,
+    from_utr_club_results,
     get_set_score,
     to_utr_score,
 )
@@ -153,6 +154,42 @@ class TestUtilities:
         """
 
         TestCase().assertListEqual(score_array, from_string_score(score))
+
+    @pytest.mark.parametrize(
+        "outcome, score, formatted_score",
+        [
+            ("withdrew", None, "W/O"),
+            (
+                None,
+                {
+                    "1": {
+                        "winner": 6,
+                        "loser": 2,
+                        "tiebreak": None,
+                        "winnerTiebreak": None,
+                    },
+                    "2": {
+                        "winner": 6,
+                        "loser": 2,
+                        "tiebreak": None,
+                        "winnerTiebreak": None,
+                    },
+                },
+                "6-2 6-2",
+            ),
+        ],
+    )
+    def test_from_utr_club_results(self, outcome, score, formatted_score):
+        """
+        Test from_utr_club_results
+        """
+
+        assert formatted_score == from_utr_club_results(
+            {
+                "outcome": outcome,
+                "score": score,
+            }
+        )
 
     @pytest.mark.parametrize(
         "set_score, parsed_score",
