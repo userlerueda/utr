@@ -72,8 +72,9 @@ def get_set_score(set_score: str):
     return parsed_set_score
 
 
-def from_club_results(result: dict) -> str:
+def from_utr_club_results(result: dict) -> str:
     """Convert from Club Results Object."""
+    LOGGER.debug("Converting the following UTR club results: %s", result)
     score_list = []
     if result["outcome"] is None:
         for set_number, value in result["score"].items():
@@ -90,8 +91,13 @@ def from_club_results(result: dict) -> str:
                     )
 
             score_list.append(set_score)
+    elif result["outcome"] == "withdrew":
+        return "W/O"
+    elif result["outcome"] == "retired":
+        LOGGER.info(result["score"])
+        return "W/O (retired)"
     else:
-        return result["outcome"]
+        return None
     return " ".join(score_list)
 
 
