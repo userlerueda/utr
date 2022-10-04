@@ -112,6 +112,22 @@ class UTR(object):
         response.raise_for_status()
         return response.json()
 
+    def get_player_results(
+        self,
+        player_id: int,
+        type: str = "singles",
+    ):
+        """Get Club Results"""
+        uri = f"/v1/player/{player_id}/results"
+        url = f"{self.url}{uri}"
+        params = {
+            "year": "last",
+            "type": type,
+        }
+        response = self.session.get(url, params=params)
+        response.raise_for_status()
+        return response.json()
+
     def invite_player_to_club(
         self, club_id: int, player_id: int, dry_run: bool = False
     ):

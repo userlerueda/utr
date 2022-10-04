@@ -9,11 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add option to invite player to club (@userlerueda) #9
+- Add option to invite player to club #9
+- Add option to get results for player
 
 ### Fixed
 
-- Fixes scores for Walkover (@userlerueda)
+- Fixes scores for Walkover
 
 ### Chores
 
@@ -23,19 +24,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Chores
 
-- Add credits in readme (@userlerueda)
+- Add credits in readme
 
 ## v1.1.0
 
 ### Changed
 
-- Move to new API url to be consistent with web application (@userlerueda)
+- Move to new API url to be consistent with web application
 
 ## v1.0.0
 
 ### Removed
 
-- Removed CCP functionality which has now been moved to a different [package](https://github.com/userlerueda/ccp) (@userlerueda)
+- Removed CCP functionality which has now been moved to a different [package](https://github.com/userlerueda/ccp)
 
 ### Fixed
 
@@ -45,5 +46,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Adds option to post results (@userlerueda)
-- Adds option to get club results (@userlerueda)
+- Adds option to post results
+- Adds option to get club results

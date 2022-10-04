@@ -33,6 +33,17 @@ def get_info(ctx, player_id):
 
 @click.command()
 @click.pass_context
+@click.argument("player_id")
+def get_results(ctx, player_id):
+    """Get player results"""
+    my_utr: UTR = ctx.obj["my_utr"]
+    my_utr.login()
+    results = my_utr.get_player_results(player_id)
+    print(json.dumps(results, indent=2))
+
+
+@click.command()
+@click.pass_context
 @click.argument("club-id")
 @click.argument("player-id")
 @click.option(
@@ -51,4 +62,5 @@ def invite_to_club(ctx, club_id: int, player_id: int, dry_run: bool):
 
 
 player.add_command(get_info)
+player.add_command(get_results)
 player.add_command(invite_to_club)
