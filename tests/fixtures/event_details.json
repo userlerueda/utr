@@ -1,0 +1,2531 @@
+{
+  "isSummerSeries": false,
+  "isDemoEvent": false,
+  "creatingMemberId": 179510,
+  "published": true,
+  "playerVisibility": true,
+  "flatFee": 0.0,
+  "percentFee": 0.0,
+  "eventSchedule": {
+    "keyDates": [
+      { "title": "Registration Begins", "date": "Oct 8" },
+      { "title": "Registration Ends", "date": "Oct 19" },
+      { "title": "Matches Start", "date": "Oct 19" }
+    ],
+    "registrationTimes": "7:00 AM -05",
+    "registrationEndString": "Registration ends on Oct 19, 10:00am -05",
+    "eventDatesShort": "Oct 19, 6:00 PM -05",
+    "eventDatesLong": "Wed, Oct 19, 6:00 PM - 9:30 PM",
+    "eventStartLong": "Wed, Oct 19, 6:00 PM",
+    "eventStartShort": "Oct 19",
+    "eventStartTimezone": "Oct 19 6:00 PM -05",
+    "eventEndShort": "Oct 19",
+    "registrationStartShort": "Oct 8",
+    "registrationEndShort": "Oct 19",
+    "drawsPublishedShort": "",
+    "timeZone": {
+      "id": 42,
+      "value": "America/Lima",
+      "label": "America/Lima",
+      "description": "",
+      "offset": "-05:00",
+      "labelLong": "America/Lima (-05:00)"
+    },
+    "registrationStartUtc": "2022-10-08T12:00:00",
+    "registrationEndUtc": "2022-10-19T15:00:00",
+    "eventStartUtc": "2022-10-19T23:00:00",
+    "eventEndUtc": "2022-10-20T02:30:00",
+    "drawPublishedUtc": null,
+    "maxEventEndUtc": null,
+    "maxResultDateUtc": "2022-10-20T02:30:00",
+    "maxPostScoreDateUtc": "2022-10-27T02:30:00",
+    "eventStartTime": "06:00 PM -05",
+    "eventStartMonth": "Oct",
+    "eventEndMonth": "Oct",
+    "eventStartDate": "19",
+    "eventStartYear": "2022",
+    "eventEndYear": "2022",
+    "eventEndDate": "19"
+  },
+  "canAddPlayer": false,
+  "regionsLockedOn": null,
+  "workflowVersion": 2,
+  "wePayCountriesList": [
+    {
+      "id": 1,
+      "value": "US",
+      "label": "United States",
+      "description": null,
+      "order": 1
+    },
+    {
+      "id": 5,
+      "value": "AF",
+      "label": "Afghanistan",
+      "description": null,
+      "order": 5
+    },
+    {
+      "id": 10,
+      "value": "AX",
+      "label": "Aland Islands",
+      "description": null,
+      "order": 10
+    },
+    {
+      "id": 15,
+      "value": "AL",
+      "label": "Albania",
+      "description": null,
+      "order": 15
+    },
+    {
+      "id": 20,
+      "value": "DZ",
+      "label": "Algeria",
+      "description": null,
+      "order": 20
+    },
+    {
+      "id": 25,
+      "value": "AS",
+      "label": "American Samoa",
+      "description": null,
+      "order": 25
+    },
+    {
+      "id": 30,
+      "value": "AD",
+      "label": "Andorra",
+      "description": null,
+      "order": 30
+    },
+    {
+      "id": 35,
+      "value": "AO",
+      "label": "Angola",
+      "description": null,
+      "order": 35
+    },
+    {
+      "id": 40,
+      "value": "AI",
+      "label": "Anguilla",
+      "description": null,
+      "order": 40
+    },
+    {
+      "id": 45,
+      "value": "AQ",
+      "label": "Antarctica",
+      "description": null,
+      "order": 45
+    },
+    {
+      "id": 50,
+      "value": "AG",
+      "label": "Antigua and Barbuda",
+      "description": null,
+      "order": 50
+    },
+    {
+      "id": 55,
+      "value": "AR",
+      "label": "Argentina",
+      "description": null,
+      "order": 55
+    },
+    {
+      "id": 60,
+      "value": "AM",
+      "label": "Armenia",
+      "description": null,
+      "order": 60
+    },
+    {
+      "id": 65,
+      "value": "AW",
+      "label": "Aruba",
+      "description": null,
+      "order": 65
+    },
+    {
+      "id": 70,
+      "value": "AU",
+      "label": "Australia",
+      "description": null,
+      "order": 70
+    },
+    {
+      "id": 75,
+      "value": "AT",
+      "label": "Austria",
+      "description": null,
+      "order": 75
+    },
+    {
+      "id": 80,
+      "value": "AZ",
+      "label": "Azerbaijan",
+      "description": null,
+      "order": 80
+    },
+    {
+      "id": 85,
+      "value": "BH",
+      "label": "Bahrain",
+      "description": null,
+      "order": 85
+    },
+    {
+      "id": 90,
+      "value": "BD",
+      "label": "Bangladesh",
+      "description": null,
+      "order": 90
+    },
+    {
+      "id": 95,
+      "value": "BB",
+      "label": "Barbados",
+      "description": null,
+      "order": 95
+    },
+    {
+      "id": 100,
+      "value": "BY",
+      "label": "Belarus",
+      "description": null,
+      "order": 100
+    },
+    {
+      "id": 105,
+      "value": "BE",
+      "label": "Belgium",
+      "description": null,
+      "order": 105
+    },
+    {
+      "id": 110,
+      "value": "BZ",
+      "label": "Belize",
+      "description": null,
+      "order": 110
+    },
+    {
+      "id": 115,
+      "value": "BJ",
+      "label": "Benin",
+      "description": null,
+      "order": 115
+    },
+    {
+      "id": 120,
+      "value": "BM",
+      "label": "Bermuda",
+      "description": null,
+      "order": 120
+    },
+    {
+      "id": 125,
+      "value": "BT",
+      "label": "Bhutan",
+      "description": null,
+      "order": 125
+    },
+    {
+      "id": 130,
+      "value": "BO",
+      "label": "Bolivia",
+      "description": null,
+      "order": 130
+    },
+    {
+      "id": 135,
+      "value": "BA",
+      "label": "Bosnia and Herzegovina",
+      "description": null,
+      "order": 135
+    },
+    {
+      "id": 140,
+      "value": "BW",
+      "label": "Botswana",
+      "description": null,
+      "order": 140
+    },
+    {
+      "id": 145,
+      "value": "BV",
+      "label": "Bouvet Island",
+      "description": null,
+      "order": 145
+    },
+    {
+      "id": 150,
+      "value": "BR",
+      "label": "Brazil",
+      "description": null,
+      "order": 150
+    },
+    {
+      "id": 155,
+      "value": "IO",
+      "label": "British Indian Ocean Territory",
+      "description": null,
+      "order": 155
+    },
+    {
+      "id": 160,
+      "value": "VG",
+      "label": "British Virgin Islands",
+      "description": null,
+      "order": 160
+    },
+    {
+      "id": 165,
+      "value": "BN",
+      "label": "Brunei Darussalam",
+      "description": null,
+      "order": 165
+    },
+    {
+      "id": 170,
+      "value": "BG",
+      "label": "Bulgaria",
+      "description": null,
+      "order": 170
+    },
+    {
+      "id": 175,
+      "value": "BF",
+      "label": "Burkina Faso",
+      "description": null,
+      "order": 175
+    },
+    {
+      "id": 180,
+      "value": "BI",
+      "label": "Burundi",
+      "description": null,
+      "order": 180
+    },
+    {
+      "id": 185,
+      "value": "KH",
+      "label": "Cambodia",
+      "description": null,
+      "order": 185
+    },
+    {
+      "id": 190,
+      "value": "CM",
+      "label": "Cameroon",
+      "description": null,
+      "order": 190
+    },
+    {
+      "id": 195,
+      "value": "CA",
+      "label": "Canada",
+      "description": null,
+      "order": 195
+    },
+    {
+      "id": 200,
+      "value": "CV",
+      "label": "Cape Verde",
+      "description": null,
+      "order": 200
+    },
+    {
+      "id": 205,
+      "value": "KY",
+      "label": "Cayman Islands",
+      "description": null,
+      "order": 205
+    },
+    {
+      "id": 210,
+      "value": "CF",
+      "label": "Central African Republic",
+      "description": null,
+      "order": 210
+    },
+    {
+      "id": 215,
+      "value": "TD",
+      "label": "Chad",
+      "description": null,
+      "order": 215
+    },
+    {
+      "id": 220,
+      "value": "CL",
+      "label": "Chile",
+      "description": null,
+      "order": 220
+    },
+    {
+      "id": 225,
+      "value": "CN",
+      "label": "China",
+      "description": null,
+      "order": 225
+    },
+    {
+      "id": 230,
+      "value": "CX",
+      "label": "Christmas Island",
+      "description": null,
+      "order": 230
+    },
+    {
+      "id": 235,
+      "value": "CC",
+      "label": "Cocos (Keeling) Islands",
+      "description": null,
+      "order": 235
+    },
+    {
+      "id": 240,
+      "value": "CO",
+      "label": "Colombia",
+      "description": null,
+      "order": 240
+    },
+    {
+      "id": 245,
+      "value": "KM",
+      "label": "Comoros",
+      "description": null,
+      "order": 245
+    },
+    {
+      "id": 250,
+      "value": "CK",
+      "label": "Cook Islands",
+      "description": null,
+      "order": 250
+    },
+    {
+      "id": 255,
+      "value": "CR",
+      "label": "Costa Rica",
+      "description": null,
+      "order": 255
+    },
+    {
+      "id": 260,
+      "value": "CI",
+      "label": "C\\u00f4te d'Ivoire",
+      "description": null,
+      "order": 260
+    },
+    {
+      "id": 265,
+      "value": "HR",
+      "label": "Croatia",
+      "description": null,
+      "order": 265
+    },
+    {
+      "id": 275,
+      "value": "CW",
+      "label": "Cura\\u00e7ao",
+      "description": null,
+      "order": 275
+    },
+    {
+      "id": 280,
+      "value": "CY",
+      "label": "Cyprus",
+      "description": null,
+      "order": 280
+    },
+    {
+      "id": 285,
+      "value": "CZ",
+      "label": "Czechia",
+      "description": null,
+      "order": 285
+    },
+    {
+      "id": 290,
+      "value": "CD",
+      "label": "Democratic Republic of the Congo",
+      "description": null,
+      "order": 290
+    },
+    {
+      "id": 295,
+      "value": "DK",
+      "label": "Denmark",
+      "description": null,
+      "order": 295
+    },
+    {
+      "id": 300,
+      "value": "DJ",
+      "label": "Djibouti",
+      "description": null,
+      "order": 300
+    },
+    {
+      "id": 305,
+      "value": "DM",
+      "label": "Dominica",
+      "description": null,
+      "order": 305
+    },
+    {
+      "id": 310,
+      "value": "DO",
+      "label": "Dominican Republic",
+      "description": null,
+      "order": 310
+    },
+    {
+      "id": 315,
+      "value": "EC",
+      "label": "Ecuador",
+      "description": null,
+      "order": 315
+    },
+    {
+      "id": 320,
+      "value": "EG",
+      "label": "Egypt",
+      "description": null,
+      "order": 320
+    },
+    {
+      "id": 325,
+      "value": "SV",
+      "label": "El Salvador",
+      "description": null,
+      "order": 325
+    },
+    {
+      "id": 330,
+      "value": "GQ",
+      "label": "Equatorial Guinea",
+      "description": null,
+      "order": 330
+    },
+    {
+      "id": 335,
+      "value": "ER",
+      "label": "Eritrea",
+      "description": null,
+      "order": 335
+    },
+    {
+      "id": 340,
+      "value": "EE",
+      "label": "Estonia",
+      "description": null,
+      "order": 340
+    },
+    {
+      "id": 345,
+      "value": "ET",
+      "label": "Ethiopia",
+      "description": null,
+      "order": 345
+    },
+    {
+      "id": 350,
+      "value": "FK",
+      "label": "Falkland Islands (Malvinas)",
+      "description": null,
+      "order": 350
+    },
+    {
+      "id": 355,
+      "value": "FO",
+      "label": "Faroe Islands",
+      "description": null,
+      "order": 355
+    },
+    {
+      "id": 360,
+      "value": "FM",
+      "label": "Federated States of Micronesia",
+      "description": null,
+      "order": 360
+    },
+    {
+      "id": 365,
+      "value": "FJ",
+      "label": "Fiji",
+      "description": null,
+      "order": 365
+    },
+    {
+      "id": 370,
+      "value": "FI",
+      "label": "Finland",
+      "description": null,
+      "order": 370
+    },
+    {
+      "id": 375,
+      "value": "FR",
+      "label": "France",
+      "description": null,
+      "order": 375
+    },
+    {
+      "id": 380,
+      "value": "FX",
+      "label": "France, Metropolitan",
+      "description": null,
+      "order": 380
+    },
+    {
+      "id": 385,
+      "value": "GF",
+      "label": "French Guiana",
+      "description": null,
+      "order": 385
+    },
+    {
+      "id": 390,
+      "value": "PF",
+      "label": "French Polynesia",
+      "description": null,
+      "order": 390
+    },
+    {
+      "id": 395,
+      "value": "TF",
+      "label": "French Southern Territories",
+      "description": null,
+      "order": 395
+    },
+    {
+      "id": 400,
+      "value": "GA",
+      "label": "Gabon",
+      "description": null,
+      "order": 400
+    },
+    {
+      "id": 405,
+      "value": "GM",
+      "label": "Gambia",
+      "description": null,
+      "order": 405
+    },
+    {
+      "id": 410,
+      "value": "GE",
+      "label": "Georgia",
+      "description": null,
+      "order": 410
+    },
+    {
+      "id": 415,
+      "value": "DE",
+      "label": "Germany",
+      "description": null,
+      "order": 415
+    },
+    {
+      "id": 420,
+      "value": "GH",
+      "label": "Ghana",
+      "description": null,
+      "order": 420
+    },
+    {
+      "id": 425,
+      "value": "GI",
+      "label": "Gibraltar",
+      "description": null,
+      "order": 425
+    },
+    {
+      "id": 430,
+      "value": "GR",
+      "label": "Greece",
+      "description": null,
+      "order": 430
+    },
+    {
+      "id": 435,
+      "value": "GL",
+      "label": "Greenland",
+      "description": null,
+      "order": 435
+    },
+    {
+      "id": 440,
+      "value": "GD",
+      "label": "Grenada",
+      "description": null,
+      "order": 440
+    },
+    {
+      "id": 445,
+      "value": "GP",
+      "label": "Guadeloupe",
+      "description": null,
+      "order": 445
+    },
+    {
+      "id": 450,
+      "value": "GU",
+      "label": "Guam",
+      "description": null,
+      "order": 450
+    },
+    {
+      "id": 455,
+      "value": "GT",
+      "label": "Guatemala",
+      "description": null,
+      "order": 455
+    },
+    {
+      "id": 465,
+      "value": "GN",
+      "label": "Guinea",
+      "description": null,
+      "order": 465
+    },
+    {
+      "id": 470,
+      "value": "GW",
+      "label": "Guinea-Bissau",
+      "description": null,
+      "order": 470
+    },
+    {
+      "id": 475,
+      "value": "GY",
+      "label": "Guyana",
+      "description": null,
+      "order": 475
+    },
+    {
+      "id": 480,
+      "value": "HT",
+      "label": "Haiti",
+      "description": null,
+      "order": 480
+    },
+    {
+      "id": 485,
+      "value": "HM",
+      "label": "Heard Island and McDonald Islands",
+      "description": null,
+      "order": 485
+    },
+    {
+      "id": 490,
+      "value": "HN",
+      "label": "Honduras",
+      "description": null,
+      "order": 490
+    },
+    {
+      "id": 495,
+      "value": "HK",
+      "label": "Hong Kong",
+      "description": null,
+      "order": 495
+    },
+    {
+      "id": 500,
+      "value": "HU",
+      "label": "Hungary",
+      "description": null,
+      "order": 500
+    },
+    {
+      "id": 505,
+      "value": "IS",
+      "label": "Iceland",
+      "description": null,
+      "order": 505
+    },
+    {
+      "id": 510,
+      "value": "IN",
+      "label": "India",
+      "description": null,
+      "order": 510
+    },
+    {
+      "id": 515,
+      "value": "ID",
+      "label": "Indonesia",
+      "description": null,
+      "order": 515
+    },
+    {
+      "id": 525,
+      "value": "IQ",
+      "label": "Iraq",
+      "description": null,
+      "order": 525
+    },
+    {
+      "id": 530,
+      "value": "IE",
+      "label": "Ireland",
+      "description": null,
+      "order": 530
+    },
+    {
+      "id": 540,
+      "value": "IL",
+      "label": "Israel",
+      "description": null,
+      "order": 540
+    },
+    {
+      "id": 545,
+      "value": "IT",
+      "label": "Italy",
+      "description": null,
+      "order": 545
+    },
+    {
+      "id": 550,
+      "value": "JM",
+      "label": "Jamaica",
+      "description": null,
+      "order": 550
+    },
+    {
+      "id": 555,
+      "value": "JP",
+      "label": "Japan",
+      "description": null,
+      "order": 555
+    },
+    {
+      "id": 560,
+      "value": "JO",
+      "label": "Jordan",
+      "description": null,
+      "order": 560
+    },
+    {
+      "id": 565,
+      "value": "KZ",
+      "label": "Kazakhstan",
+      "description": null,
+      "order": 565
+    },
+    {
+      "id": 570,
+      "value": "KE",
+      "label": "Kenya",
+      "description": null,
+      "order": 570
+    },
+    {
+      "id": 575,
+      "value": "KI",
+      "label": "Kiribati",
+      "description": null,
+      "order": 575
+    },
+    {
+      "id": 580,
+      "value": "XK",
+      "label": "Kosovo",
+      "description": null,
+      "order": 580
+    },
+    {
+      "id": 585,
+      "value": "KW",
+      "label": "Kuwait",
+      "description": null,
+      "order": 585
+    },
+    {
+      "id": 590,
+      "value": "KG",
+      "label": "Kyrgyzstan",
+      "description": null,
+      "order": 590
+    },
+    {
+      "id": 595,
+      "value": "LA",
+      "label": "Laos",
+      "description": null,
+      "order": 595
+    },
+    {
+      "id": 600,
+      "value": "LV",
+      "label": "Latvia",
+      "description": null,
+      "order": 600
+    },
+    {
+      "id": 605,
+      "value": "LB",
+      "label": "Lebanon",
+      "description": null,
+      "order": 605
+    },
+    {
+      "id": 610,
+      "value": "LS",
+      "label": "Lesotho",
+      "description": null,
+      "order": 610
+    },
+    {
+      "id": 615,
+      "value": "LR",
+      "label": "Liberia",
+      "description": null,
+      "order": 615
+    },
+    {
+      "id": 620,
+      "value": "LY",
+      "label": "Libya",
+      "description": null,
+      "order": 620
+    },
+    {
+      "id": 625,
+      "value": "LI",
+      "label": "Liechtenstein",
+      "description": null,
+      "order": 625
+    },
+    {
+      "id": 630,
+      "value": "LT",
+      "label": "Lithuania",
+      "description": null,
+      "order": 630
+    },
+    {
+      "id": 635,
+      "value": "LU",
+      "label": "Luxembourg",
+      "description": null,
+      "order": 635
+    },
+    {
+      "id": 640,
+      "value": "MO",
+      "label": "Macao",
+      "description": null,
+      "order": 640
+    },
+    {
+      "id": 645,
+      "value": "MK",
+      "label": "Macedonia (FYROM)",
+      "description": null,
+      "order": 645
+    },
+    {
+      "id": 650,
+      "value": "MG",
+      "label": "Madagascar",
+      "description": null,
+      "order": 650
+    },
+    {
+      "id": 655,
+      "value": "MW",
+      "label": "Malawi",
+      "description": null,
+      "order": 655
+    },
+    {
+      "id": 660,
+      "value": "MY",
+      "label": "Malaysia",
+      "description": null,
+      "order": 660
+    },
+    {
+      "id": 665,
+      "value": "MV",
+      "label": "Maldives",
+      "description": null,
+      "order": 665
+    },
+    {
+      "id": 670,
+      "value": "ML",
+      "label": "Mali",
+      "description": null,
+      "order": 670
+    },
+    {
+      "id": 675,
+      "value": "MT",
+      "label": "Malta",
+      "description": null,
+      "order": 675
+    },
+    {
+      "id": 680,
+      "value": "MH",
+      "label": "Marshall Islands",
+      "description": null,
+      "order": 680
+    },
+    {
+      "id": 685,
+      "value": "MQ",
+      "label": "Martinique",
+      "description": null,
+      "order": 685
+    },
+    {
+      "id": 690,
+      "value": "MR",
+      "label": "Mauritania",
+      "description": null,
+      "order": 690
+    },
+    {
+      "id": 695,
+      "value": "MU",
+      "label": "Mauritius",
+      "description": null,
+      "order": 695
+    },
+    {
+      "id": 700,
+      "value": "YT",
+      "label": "Mayotte",
+      "description": null,
+      "order": 700
+    },
+    {
+      "id": 705,
+      "value": "MX",
+      "label": "Mexico",
+      "description": null,
+      "order": 705
+    },
+    {
+      "id": 710,
+      "value": "MD",
+      "label": "Moldova",
+      "description": null,
+      "order": 710
+    },
+    {
+      "id": 715,
+      "value": "MC",
+      "label": "Monaco",
+      "description": null,
+      "order": 715
+    },
+    {
+      "id": 720,
+      "value": "MN",
+      "label": "Mongolia",
+      "description": null,
+      "order": 720
+    },
+    {
+      "id": 725,
+      "value": "ME",
+      "label": "Montenegro",
+      "description": null,
+      "order": 725
+    },
+    {
+      "id": 730,
+      "value": "MS",
+      "label": "Montserrat",
+      "description": null,
+      "order": 730
+    },
+    {
+      "id": 735,
+      "value": "MA",
+      "label": "Morocco",
+      "description": null,
+      "order": 735
+    },
+    {
+      "id": 740,
+      "value": "MZ",
+      "label": "Mozambique",
+      "description": null,
+      "order": 740
+    },
+    {
+      "id": 745,
+      "value": "MM",
+      "label": "Myanmar (Burma)",
+      "description": null,
+      "order": 745
+    },
+    {
+      "id": 750,
+      "value": "NA",
+      "label": "Namibia",
+      "description": null,
+      "order": 750
+    },
+    {
+      "id": 755,
+      "value": "NR",
+      "label": "Nauru",
+      "description": null,
+      "order": 755
+    },
+    {
+      "id": 760,
+      "value": "NP",
+      "label": "Nepal",
+      "description": null,
+      "order": 760
+    },
+    {
+      "id": 765,
+      "value": "NL",
+      "label": "Netherlands",
+      "description": null,
+      "order": 765
+    },
+    {
+      "id": 770,
+      "value": "NC",
+      "label": "New Caledonia",
+      "description": null,
+      "order": 770
+    },
+    {
+      "id": 775,
+      "value": "NZ",
+      "label": "New Zealand",
+      "description": null,
+      "order": 775
+    },
+    {
+      "id": 780,
+      "value": "NI",
+      "label": "Nicaragua",
+      "description": null,
+      "order": 780
+    },
+    {
+      "id": 785,
+      "value": "NE",
+      "label": "Niger",
+      "description": null,
+      "order": 785
+    },
+    {
+      "id": 790,
+      "value": "NG",
+      "label": "Nigeria",
+      "description": null,
+      "order": 790
+    },
+    {
+      "id": 795,
+      "value": "NU",
+      "label": "Niue",
+      "description": null,
+      "order": 795
+    },
+    {
+      "id": 800,
+      "value": "NF",
+      "label": "Norfolk Island",
+      "description": null,
+      "order": 800
+    },
+    {
+      "id": 810,
+      "value": "MP",
+      "label": "Northern Mariana Islands",
+      "description": null,
+      "order": 810
+    },
+    {
+      "id": 815,
+      "value": "NO",
+      "label": "Norway",
+      "description": null,
+      "order": 815
+    },
+    {
+      "id": 820,
+      "value": "OM",
+      "label": "Oman",
+      "description": null,
+      "order": 820
+    },
+    {
+      "id": 825,
+      "value": "PK",
+      "label": "Pakistan",
+      "description": null,
+      "order": 825
+    },
+    {
+      "id": 830,
+      "value": "PW",
+      "label": "Palau",
+      "description": null,
+      "order": 830
+    },
+    {
+      "id": 835,
+      "value": "PS",
+      "label": "Palestine",
+      "description": null,
+      "order": 835
+    },
+    {
+      "id": 840,
+      "value": "PA",
+      "label": "Panama",
+      "description": null,
+      "order": 840
+    },
+    {
+      "id": 845,
+      "value": "PG",
+      "label": "Papua New Guinea",
+      "description": null,
+      "order": 845
+    },
+    {
+      "id": 850,
+      "value": "PY",
+      "label": "Paraguay",
+      "description": null,
+      "order": 850
+    },
+    {
+      "id": 855,
+      "value": "PE",
+      "label": "Peru",
+      "description": null,
+      "order": 855
+    },
+    {
+      "id": 860,
+      "value": "PH",
+      "label": "Philippines",
+      "description": null,
+      "order": 860
+    },
+    {
+      "id": 865,
+      "value": "PN",
+      "label": "Pitcairn",
+      "description": null,
+      "order": 865
+    },
+    {
+      "id": 870,
+      "value": "PL",
+      "label": "Poland",
+      "description": null,
+      "order": 870
+    },
+    {
+      "id": 875,
+      "value": "PT",
+      "label": "Portugal",
+      "description": null,
+      "order": 875
+    },
+    {
+      "id": 880,
+      "value": "PR",
+      "label": "Puerto Rico",
+      "description": null,
+      "order": 880
+    },
+    {
+      "id": 885,
+      "value": "QA",
+      "label": "Qatar",
+      "description": null,
+      "order": 885
+    },
+    {
+      "id": 890,
+      "value": "CG",
+      "label": "Republic of the Congo",
+      "description": null,
+      "order": 890
+    },
+    {
+      "id": 895,
+      "value": "RE",
+      "label": "Reunion",
+      "description": null,
+      "order": 895
+    },
+    {
+      "id": 900,
+      "value": "RO",
+      "label": "Romania",
+      "description": null,
+      "order": 900
+    },
+    {
+      "id": 905,
+      "value": "RU",
+      "label": "Russia",
+      "description": null,
+      "order": 905
+    },
+    {
+      "id": 910,
+      "value": "RW",
+      "label": "Rwanda",
+      "description": null,
+      "order": 910
+    },
+    {
+      "id": 915,
+      "value": "SH",
+      "label": "Saint Helena",
+      "description": null,
+      "order": 915
+    },
+    {
+      "id": 920,
+      "value": "KN",
+      "label": "Saint Kitts and Nevis",
+      "description": null,
+      "order": 920
+    },
+    {
+      "id": 925,
+      "value": "LC",
+      "label": "Saint Lucia",
+      "description": null,
+      "order": 925
+    },
+    {
+      "id": 930,
+      "value": "MF",
+      "label": "Saint Martin",
+      "description": null,
+      "order": 930
+    },
+    {
+      "id": 935,
+      "value": "PM",
+      "label": "Saint Pierre and Miquelon",
+      "description": null,
+      "order": 935
+    },
+    {
+      "id": 940,
+      "value": "VC",
+      "label": "Saint Vincent and the Grenadines",
+      "description": null,
+      "order": 940
+    },
+    {
+      "id": 945,
+      "value": "WS",
+      "label": "Samoa",
+      "description": null,
+      "order": 945
+    },
+    {
+      "id": 950,
+      "value": "SM",
+      "label": "San Marino",
+      "description": null,
+      "order": 950
+    },
+    {
+      "id": 955,
+      "value": "ST",
+      "label": "Sao Tome and Principe",
+      "description": null,
+      "order": 955
+    },
+    {
+      "id": 960,
+      "value": "SA",
+      "label": "Saudi Arabia",
+      "description": null,
+      "order": 960
+    },
+    {
+      "id": 965,
+      "value": "SN",
+      "label": "Senegal",
+      "description": null,
+      "order": 965
+    },
+    {
+      "id": 970,
+      "value": "RS",
+      "label": "Serbia",
+      "description": null,
+      "order": 970
+    },
+    {
+      "id": 975,
+      "value": "SC",
+      "label": "Seychelles",
+      "description": null,
+      "order": 975
+    },
+    {
+      "id": 980,
+      "value": "SL",
+      "label": "Sierra Leone",
+      "description": null,
+      "order": 980
+    },
+    {
+      "id": 985,
+      "value": "SG",
+      "label": "Singapore",
+      "description": null,
+      "order": 985
+    },
+    {
+      "id": 990,
+      "value": "SX",
+      "label": "Sint Maarten",
+      "description": null,
+      "order": 990
+    },
+    {
+      "id": 995,
+      "value": "SK",
+      "label": "Slovakia",
+      "description": null,
+      "order": 995
+    },
+    {
+      "id": 1000,
+      "value": "SI",
+      "label": "Slovenia",
+      "description": null,
+      "order": 1000
+    },
+    {
+      "id": 1005,
+      "value": "SB",
+      "label": "Solomon Islands",
+      "description": null,
+      "order": 1005
+    },
+    {
+      "id": 1010,
+      "value": "SO",
+      "label": "Somalia",
+      "description": null,
+      "order": 1010
+    },
+    {
+      "id": 1015,
+      "value": "ZA",
+      "label": "South Africa",
+      "description": null,
+      "order": 1015
+    },
+    {
+      "id": 1020,
+      "value": "GS",
+      "label": "South Georgia and the South Sandwich Islands",
+      "description": null,
+      "order": 1020
+    },
+    {
+      "id": 1025,
+      "value": "KR",
+      "label": "South Korea",
+      "description": null,
+      "order": 1025
+    },
+    {
+      "id": 1030,
+      "value": "SS",
+      "label": "South Sudan",
+      "description": null,
+      "order": 1030
+    },
+    {
+      "id": 1035,
+      "value": "ES",
+      "label": "Spain",
+      "description": null,
+      "order": 1035
+    },
+    {
+      "id": 1040,
+      "value": "LK",
+      "label": "Sri Lanka",
+      "description": null,
+      "order": 1040
+    },
+    {
+      "id": 1050,
+      "value": "SR",
+      "label": "Suriname",
+      "description": null,
+      "order": 1050
+    },
+    {
+      "id": 1055,
+      "value": "SJ",
+      "label": "Svalbard and Jan Mayen",
+      "description": null,
+      "order": 1055
+    },
+    {
+      "id": 1060,
+      "value": "SZ",
+      "label": "Swaziland",
+      "description": null,
+      "order": 1060
+    },
+    {
+      "id": 1065,
+      "value": "SE",
+      "label": "Sweden",
+      "description": null,
+      "order": 1065
+    },
+    {
+      "id": 1070,
+      "value": "CH",
+      "label": "Switzerland",
+      "description": null,
+      "order": 1070
+    },
+    {
+      "id": 1080,
+      "value": "TW",
+      "label": "Taiwan",
+      "description": null,
+      "order": 1080
+    },
+    {
+      "id": 1085,
+      "value": "TJ",
+      "label": "Tajikistan",
+      "description": null,
+      "order": 1085
+    },
+    {
+      "id": 1090,
+      "value": "TZ",
+      "label": "Tanzania",
+      "description": null,
+      "order": 1090
+    },
+    {
+      "id": 1095,
+      "value": "TH",
+      "label": "Thailand",
+      "description": null,
+      "order": 1095
+    },
+    {
+      "id": 1100,
+      "value": "BS",
+      "label": "The Bahamas",
+      "description": null,
+      "order": 1100
+    },
+    {
+      "id": 1105,
+      "value": "TL",
+      "label": "Timor-Leste",
+      "description": null,
+      "order": 1105
+    },
+    {
+      "id": 1110,
+      "value": "TG",
+      "label": "Togo",
+      "description": null,
+      "order": 1110
+    },
+    {
+      "id": 1115,
+      "value": "TK",
+      "label": "Tokelau",
+      "description": null,
+      "order": 1115
+    },
+    {
+      "id": 1120,
+      "value": "TO",
+      "label": "Tonga",
+      "description": null,
+      "order": 1120
+    },
+    {
+      "id": 1125,
+      "value": "TT",
+      "label": "Trinidad and Tobago",
+      "description": null,
+      "order": 1125
+    },
+    {
+      "id": 1130,
+      "value": "TN",
+      "label": "Tunisia",
+      "description": null,
+      "order": 1130
+    },
+    {
+      "id": 1135,
+      "value": "TR",
+      "label": "Turkey",
+      "description": null,
+      "order": 1135
+    },
+    {
+      "id": 1140,
+      "value": "TM",
+      "label": "Turkmenistan",
+      "description": null,
+      "order": 1140
+    },
+    {
+      "id": 1145,
+      "value": "TC",
+      "label": "Turks and Caicos Islands",
+      "description": null,
+      "order": 1145
+    },
+    {
+      "id": 1150,
+      "value": "TV",
+      "label": "Tuvalu",
+      "description": null,
+      "order": 1150
+    },
+    {
+      "id": 1155,
+      "value": "VI",
+      "label": "U.S. Virgin Islands",
+      "description": null,
+      "order": 1155
+    },
+    {
+      "id": 1160,
+      "value": "UG",
+      "label": "Uganda",
+      "description": null,
+      "order": 1160
+    },
+    {
+      "id": 1165,
+      "value": "UA",
+      "label": "Ukraine",
+      "description": null,
+      "order": 1165
+    },
+    {
+      "id": 1170,
+      "value": "AE",
+      "label": "United Arab Emirates",
+      "description": null,
+      "order": 1170
+    },
+    {
+      "id": 1175,
+      "value": "GB",
+      "label": "United Kingdom",
+      "description": null,
+      "order": 1175
+    },
+    {
+      "id": 1180,
+      "value": "UM",
+      "label": "United States Minor Outlying Islands",
+      "description": null,
+      "order": 1180
+    },
+    {
+      "id": 1185,
+      "value": "UY",
+      "label": "Uruguay",
+      "description": null,
+      "order": 1185
+    },
+    {
+      "id": 1190,
+      "value": "UZ",
+      "label": "Uzbekistan",
+      "description": null,
+      "order": 1190
+    },
+    {
+      "id": 1195,
+      "value": "VU",
+      "label": "Vanuatu",
+      "description": null,
+      "order": 1195
+    },
+    {
+      "id": 1200,
+      "value": "VA",
+      "label": "Vatican City",
+      "description": null,
+      "order": 1200
+    },
+    {
+      "id": 1205,
+      "value": "VE",
+      "label": "Venezuela",
+      "description": null,
+      "order": 1205
+    },
+    {
+      "id": 1210,
+      "value": "VN",
+      "label": "Vietnam",
+      "description": null,
+      "order": 1210
+    },
+    {
+      "id": 1215,
+      "value": "WF",
+      "label": "Wallis and Futuna",
+      "description": null,
+      "order": 1215
+    },
+    {
+      "id": 1220,
+      "value": "EH",
+      "label": "Western Sahara",
+      "description": null,
+      "order": 1220
+    },
+    {
+      "id": 1225,
+      "value": "YE",
+      "label": "Yemen",
+      "description": null,
+      "order": 1225
+    },
+    {
+      "id": 1230,
+      "value": "ZM",
+      "label": "Zambia",
+      "description": null,
+      "order": 1230
+    },
+    {
+      "id": 1235,
+      "value": "ZW",
+      "label": "Zimbabwe",
+      "description": null,
+      "order": 1235
+    }
+  ],
+  "eventLocations": [
+    {
+      "eventLocationType": {
+        "id": 1,
+        "value": "primary",
+        "label": "Primary",
+        "description": "This is the main location for the event."
+      },
+      "locationId": 4609,
+      "latLng": [4.8087174, -75.690601],
+      "display": "Pereira, Colombia",
+      "googleFormattedName": "Pereira, Risaralda, Colombia",
+      "googlePlaceId": "ChIJ_cFW60iHOI4RvN_x-RCUs5U",
+      "placeName": null,
+      "streetAddress": "",
+      "cityStateZip": "Pereira, Risaralda",
+      "cityName": "Pereira",
+      "cityAbbr": "Pereira",
+      "stateName": "Risaralda",
+      "stateAbbr": "Risaralda",
+      "countryName": "Colombia",
+      "countryCode2": "CO",
+      "countryCode3": "COL",
+      "countryIoc": "COL"
+    }
+  ],
+  "eventQuestions": [
+    {
+      "id": 80987,
+      "text": "\\u00bfQui\\u00e9n es su pareja de dobles? Registre el nombre de su pareja aqu\\u00ed. ",
+      "required": true,
+      "type": { "id": 1, "value": "text", "label": "Text", "description": "" }
+    }
+  ],
+  "eventDirectors": [
+    {
+      "memberId": 504323,
+      "memberEmail": "email@domain.com",
+      "firstName": "Victor Hugo",
+      "lastName": "Gonzalez Cicao",
+      "displayName": "Victor Hugo Gonzalez Cicao",
+      "eventDirectorRole": {
+        "id": 1,
+        "value": "admin",
+        "label": "Admin",
+        "description": "Can modify any aspect of the event."
+      },
+      "playerProfileImages": {
+        "default": null,
+        "thumbnail": { "oneX": null, "twoX": null, "threeX": null },
+        "card": { "oneX": null, "twoX": null, "threeX": null },
+        "profile": { "oneX": null, "twoX": null, "threeX": null },
+        "icon": { "oneX": null, "twoX": null, "threeX": null }
+      },
+      "playerId": null
+    }
+  ],
+  "eventDivisions": [
+    {
+      "id": 210292,
+      "name": "Categoria Primera (Nivel Interclubes)",
+      "entryFee": 40000.0,
+      "currencyId": 1,
+      "gender": {
+        "id": 1,
+        "value": "all",
+        "label": "Co-ed",
+        "description": "Co-ed"
+      },
+      "divisionFormatType": {
+        "id": 1,
+        "value": "singles",
+        "label": "Singles",
+        "description": ""
+      },
+      "eliminationType": {
+        "id": 5,
+        "value": "match_play",
+        "label": "Match Play",
+        "description": "",
+        "order": 4
+      },
+      "scoringType": null,
+      "coachingType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "officialsType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "ballType": null,
+      "maxPlayers": 32,
+      "allowWaitlist": true,
+      "minUtr": 1.0,
+      "maxUtr": 16.0,
+      "minAge": 7,
+      "maxAge": 71,
+      "restrictAge": false,
+      "utrRange": "All",
+      "ageRange": "All",
+      "price": "40,000",
+      "priceNonPowered": "40,000",
+      "registeredCount": 4,
+      "clubVerificationFee": null,
+      "coaching": "Coaching Allowed",
+      "officials": "Officials Present",
+      "detail": "Match Play",
+      "additionalDetail": "Coaching Allowed, Officials Present",
+      "paymentType": {
+        "id": 3,
+        "value": "cash",
+        "label": "Cash",
+        "description": "Cash",
+        "isOffPlatform": true
+      },
+      "poweredOnly": false,
+      "selfWithdrawAllowed": false,
+      "maxSelfWithdrawDateUtc": null,
+      "autoRefundEnabled": false,
+      "maxAutoRefundDateUtc": null,
+      "environments": [
+        {
+          "id": 2,
+          "value": "outdoor",
+          "label": "Outdoor",
+          "description": "Outdoor environment"
+        }
+      ],
+      "surfaces": [
+        {
+          "id": 2,
+          "value": "clay",
+          "label": "Clay",
+          "description": "A clay surface"
+        }
+      ]
+    },
+    {
+      "id": 210293,
+      "name": "Categoria Segunda (Nivel Interclubes)",
+      "entryFee": 40000.0,
+      "currencyId": 1,
+      "gender": {
+        "id": 1,
+        "value": "all",
+        "label": "Co-ed",
+        "description": "Co-ed"
+      },
+      "divisionFormatType": {
+        "id": 1,
+        "value": "singles",
+        "label": "Singles",
+        "description": ""
+      },
+      "eliminationType": {
+        "id": 5,
+        "value": "match_play",
+        "label": "Match Play",
+        "description": "",
+        "order": 4
+      },
+      "scoringType": null,
+      "coachingType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "officialsType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "ballType": null,
+      "maxPlayers": 32,
+      "allowWaitlist": true,
+      "minUtr": 1.0,
+      "maxUtr": 16.0,
+      "minAge": 7,
+      "maxAge": 71,
+      "restrictAge": false,
+      "utrRange": "All",
+      "ageRange": "All",
+      "price": "40,000",
+      "priceNonPowered": "40,000",
+      "registeredCount": 0,
+      "clubVerificationFee": null,
+      "coaching": "Coaching Allowed",
+      "officials": "Officials Present",
+      "detail": "Match Play",
+      "additionalDetail": "Coaching Allowed, Officials Present",
+      "paymentType": {
+        "id": 3,
+        "value": "cash",
+        "label": "Cash",
+        "description": "Cash",
+        "isOffPlatform": true
+      },
+      "poweredOnly": false,
+      "selfWithdrawAllowed": false,
+      "maxSelfWithdrawDateUtc": null,
+      "autoRefundEnabled": false,
+      "maxAutoRefundDateUtc": null,
+      "environments": [
+        {
+          "id": 2,
+          "value": "outdoor",
+          "label": "Outdoor",
+          "description": "Outdoor environment"
+        }
+      ],
+      "surfaces": [
+        {
+          "id": 2,
+          "value": "clay",
+          "label": "Clay",
+          "description": "A clay surface"
+        }
+      ]
+    },
+    {
+      "id": 210294,
+      "name": "Categoria Tercera (Nivel Interclubes)",
+      "entryFee": 40000.0,
+      "currencyId": 1,
+      "gender": {
+        "id": 1,
+        "value": "all",
+        "label": "Co-ed",
+        "description": "Co-ed"
+      },
+      "divisionFormatType": {
+        "id": 1,
+        "value": "singles",
+        "label": "Singles",
+        "description": ""
+      },
+      "eliminationType": {
+        "id": 5,
+        "value": "match_play",
+        "label": "Match Play",
+        "description": "",
+        "order": 4
+      },
+      "scoringType": null,
+      "coachingType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "officialsType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "ballType": null,
+      "maxPlayers": 32,
+      "allowWaitlist": true,
+      "minUtr": 1.0,
+      "maxUtr": 16.0,
+      "minAge": 7,
+      "maxAge": 71,
+      "restrictAge": false,
+      "utrRange": "All",
+      "ageRange": "All",
+      "price": "40,000",
+      "priceNonPowered": "40,000",
+      "registeredCount": 3,
+      "clubVerificationFee": null,
+      "coaching": "Coaching Allowed",
+      "officials": "Officials Present",
+      "detail": "Match Play",
+      "additionalDetail": "Coaching Allowed, Officials Present",
+      "paymentType": {
+        "id": 3,
+        "value": "cash",
+        "label": "Cash",
+        "description": "Cash",
+        "isOffPlatform": true
+      },
+      "poweredOnly": false,
+      "selfWithdrawAllowed": false,
+      "maxSelfWithdrawDateUtc": null,
+      "autoRefundEnabled": false,
+      "maxAutoRefundDateUtc": null,
+      "environments": [
+        {
+          "id": 2,
+          "value": "outdoor",
+          "label": "Outdoor",
+          "description": "Outdoor environment"
+        }
+      ],
+      "surfaces": [
+        {
+          "id": 2,
+          "value": "clay",
+          "label": "Clay",
+          "description": "A clay surface"
+        }
+      ]
+    },
+    {
+      "id": 210295,
+      "name": "Categoria Cuarta (Nivel Interclubes)",
+      "entryFee": 40000.0,
+      "currencyId": 1,
+      "gender": {
+        "id": 1,
+        "value": "all",
+        "label": "Co-ed",
+        "description": "Co-ed"
+      },
+      "divisionFormatType": {
+        "id": 1,
+        "value": "singles",
+        "label": "Singles",
+        "description": ""
+      },
+      "eliminationType": {
+        "id": 5,
+        "value": "match_play",
+        "label": "Match Play",
+        "description": "",
+        "order": 4
+      },
+      "scoringType": null,
+      "coachingType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "officialsType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "ballType": null,
+      "maxPlayers": 32,
+      "allowWaitlist": true,
+      "minUtr": 1.0,
+      "maxUtr": 16.0,
+      "minAge": 7,
+      "maxAge": 71,
+      "restrictAge": false,
+      "utrRange": "All",
+      "ageRange": "All",
+      "price": "40,000",
+      "priceNonPowered": "40,000",
+      "registeredCount": 34,
+      "clubVerificationFee": null,
+      "coaching": "Coaching Allowed",
+      "officials": "Officials Present",
+      "detail": "Match Play",
+      "additionalDetail": "Coaching Allowed, Officials Present",
+      "paymentType": {
+        "id": 3,
+        "value": "cash",
+        "label": "Cash",
+        "description": "Cash",
+        "isOffPlatform": true
+      },
+      "poweredOnly": false,
+      "selfWithdrawAllowed": false,
+      "maxSelfWithdrawDateUtc": null,
+      "autoRefundEnabled": false,
+      "maxAutoRefundDateUtc": null,
+      "environments": [
+        {
+          "id": 2,
+          "value": "outdoor",
+          "label": "Outdoor",
+          "description": "Outdoor environment"
+        }
+      ],
+      "surfaces": [
+        {
+          "id": 2,
+          "value": "clay",
+          "label": "Clay",
+          "description": "A clay surface"
+        }
+      ]
+    },
+    {
+      "id": 210404,
+      "name": "Sin Categoria",
+      "entryFee": 40000.0,
+      "currencyId": 1,
+      "gender": {
+        "id": 1,
+        "value": "all",
+        "label": "Co-ed",
+        "description": "Co-ed"
+      },
+      "divisionFormatType": {
+        "id": 1,
+        "value": "singles",
+        "label": "Singles",
+        "description": ""
+      },
+      "eliminationType": {
+        "id": 5,
+        "value": "match_play",
+        "label": "Match Play",
+        "description": "",
+        "order": 4
+      },
+      "scoringType": {
+        "id": 2,
+        "value": "2_sets_w_tiebreak",
+        "label": "Two Sets w/ Match Tiebreaker",
+        "description": ""
+      },
+      "coachingType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "officialsType": {
+        "id": 2,
+        "value": "yes",
+        "label": "Yes",
+        "description": ""
+      },
+      "ballType": null,
+      "maxPlayers": 32,
+      "allowWaitlist": true,
+      "minUtr": 1.0,
+      "maxUtr": 16.0,
+      "minAge": 7,
+      "maxAge": 71,
+      "restrictAge": false,
+      "utrRange": "All",
+      "ageRange": "All",
+      "price": "40,000",
+      "priceNonPowered": "40,000",
+      "registeredCount": 3,
+      "clubVerificationFee": null,
+      "coaching": "Coaching Allowed",
+      "officials": "Officials Present",
+      "detail": "Match Play, Two Sets w/ Match Tiebreaker",
+      "additionalDetail": "Coaching Allowed, Officials Present",
+      "paymentType": {
+        "id": 3,
+        "value": "cash",
+        "label": "Cash",
+        "description": "Cash",
+        "isOffPlatform": true
+      },
+      "poweredOnly": false,
+      "selfWithdrawAllowed": false,
+      "maxSelfWithdrawDateUtc": null,
+      "autoRefundEnabled": false,
+      "maxAutoRefundDateUtc": null,
+      "environments": [
+        {
+          "id": 2,
+          "value": "outdoor",
+          "label": "Outdoor",
+          "description": "Outdoor environment"
+        }
+      ],
+      "surfaces": [
+        {
+          "id": 2,
+          "value": "clay",
+          "label": "Clay",
+          "description": "A clay surface"
+        }
+      ]
+    }
+  ],
+  "draws": [],
+  "divisions": null,
+  "photoCount": 0,
+  "timesPublished": 0,
+  "paymentProviderType": {
+    "id": 2,
+    "value": "stripe",
+    "label": "Stripe",
+    "description": null,
+    "default": true
+  },
+  "passwordEnabled": false,
+  "entryFeeMax": 40000.0,
+  "entryFeeMin": 40000.0,
+  "gender": "Co-ed",
+  "utrRange": "1.0 - 16.0",
+  "teamType": "Singles",
+  "ageRange": "7 - 71",
+  "scoringType": "Match Play | Match Play, Two Sets w/ Match Tiebreaker",
+  "drawsPublished": false,
+  "eventState": {
+    "id": 2,
+    "label": "Open Registration",
+    "value": "open_registration",
+    "description": "",
+    "registrationState": {
+      "id": 2,
+      "label": "Open Registration",
+      "value": "open_registration",
+      "description": ""
+    }
+  },
+  "paidDivisions": true,
+  "registeredPlayers": [
+    {
+      "registeredDivisions": [
+        {
+          "divisionId": 210292,
+          "partners": [],
+          "paymentStatusType": {
+            "id": 3,
+            "value": "free",
+            "label": "Free",
+            "description": null
+          },
+          "registrationStatus": "Registered",
+          "paymentStatus": "Free",
+          "registeredDate": "October 15, 2022 11:29am -05"
+        }
+      ],
+      "draws": null,
+      "birthDate": "1900-01-01T00:00:00",
+      "isPro": false,
+      "id": 1253456,
+      "displayName": "John Doe",
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "M",
+      "hasYobOnly": false,
+      "singlesUtr": 0.0,
+      "ratingStatusSingles": "Unrated",
+      "ratingStatusSinglesVal": 0,
+      "ratingProgressSingles": 0.0,
+      "doublesUtr": 9.51,
+      "ratingStatusDoubles": "Projected",
+      "ratingStatusDoublesVal": 2,
+      "ratingProgressDoubles": 56.0,
+      "myUtrProgressSingles": 36.0,
+      "myUtrProgressDoubles": 44.0,
+      "collegeId": null,
+      "highSchoolId": null,
+      "college": null,
+      "highSchool": null,
+      "gradYearHs": null,
+      "myUtrSingles": 7.5,
+      "myUtrDoubles": 10.12,
+      "finalPbr": null,
+      "myUtrStatusSingles": "Projected",
+      "myUtrStatusDoubles": "Projected",
+      "singlesUtrDisplay": "0.00",
+      "doublesUtrDisplay": "9.51",
+      "myUtrSinglesDisplay": "7.50",
+      "myUtrDoublesDisplay": "10.12",
+      "pbrRatingDisplay": null,
+      "location": {
+        "latLng": [4.8087174, -75.690601],
+        "display": "Cartagena, Colombia",
+        "googleFormattedName": null
+      },
+      "nationality": "COL",
+      "historicRatings": {
+        "historicSinglesRating": null,
+        "historicSinglesRatingReliability": null,
+        "historicSinglesRatingDate": null,
+        "historicDoublesRating": null,
+        "historicDoublesRatingReliability": null,
+        "historicDoublesRatingDate": null,
+        "historicSinglesRatingDisplay": "0.00",
+        "historicDoublesRatingDisplay": "0.00"
+      },
+      "answers": [{ "questionId": 80987, "answer": "Jane Doe" }],
+      "email": "email@domain.com",
+      "phone": "+571234567890",
+      "phoneCountryCode": "CO",
+      "powerSubscriber": false,
+      "clubMemberTypeId": 1,
+      "playerProfileImages": {
+        "default": null,
+        "thumbnail": { "oneX": null, "twoX": null, "threeX": null },
+        "card": { "oneX": null, "twoX": null, "threeX": null },
+        "profile": { "oneX": null, "twoX": null, "threeX": null },
+        "icon": { "oneX": null, "twoX": null, "threeX": null }
+      },
+      "eventTeamDetail": null,
+      "refundable": true,
+      "utrRange": {
+        "minUtr": 3.5,
+        "maxUtr": 5.5,
+        "lastReliableRating": null,
+        "lastReliableRatingDate": null,
+        "minUtrDisplay": "3.50",
+        "maxUtrDisplay": "5.50",
+        "lastReliableRatingDisplay": "0.00",
+        "pbrRange": null
+      },
+      "homeClub": null,
+      "memberId": 521168
+    }
+  ],
+  "membersWithoutProfile": [],
+  "teams": [],
+  "eventTours": [],
+  "registeredCount": 42,
+  "invites": { "members": [], "nonMembers": [] },
+  "hsEventType": null,
+  "allowPlayerPosting": false,
+  "templateId": null,
+  "isTemplatePreview": false,
+  "imgFeedId": null,
+  "facilities": [],
+  "additionalSafetyInformation": null,
+  "healthAndSafetyProtocols": [
+    {
+      "id": 4,
+      "value": "hand-sanitizers",
+      "label": "Hand sanitizers available on site",
+      "description": "hand-sanitizers"
+    }
+  ],
+  "id": 130977,
+  "name": "Matchplay Dobles (Categor\\u00edas Interclubes)",
+  "club": {
+    "id": 12610,
+    "name": "Club Campestre de Pereira",
+    "private": false,
+    "statusType": {
+      "id": 2,
+      "value": "active",
+      "label": "Active",
+      "description": "Paid for and operational"
+    },
+    "sanctioned": true,
+    "paymentsEnabled": false,
+    "verificationApplicationStatus": "",
+    "referralCode": "clubcamp964",
+    "tierTypeId": 7,
+    "tierType": {
+      "id": 7,
+      "name": "Enterprise",
+      "maxOwners": 2,
+      "maxMembers": 0,
+      "maxOrganizers": 4,
+      "enablePayments": true,
+      "verificationAllowed": true,
+      "canRunEvents": true,
+      "canPostScores": true,
+      "isSearchable": true,
+      "isCollege": false,
+      "isHighSchool": false,
+      "minimumVerifiedDivisionRegistrationFee": 0.0,
+      "profileVisibilityTypeId": 1,
+      "permissionedTmsEventTypes": null,
+      "profileVisibilityType": null
+    },
+    "paymentProviderCountry": null,
+    "stripeAccountId": null,
+    "url": null
+  },
+  "currency": {
+    "id": 1,
+    "name": "Dollars",
+    "abbreviation": "USD",
+    "symbol": "$"
+  },
+  "currencyInfo": null,
+  "phone": "+571234567890",
+  "phoneCountryCode": "CO",
+  "email": "email@domain.com",
+  "photoUrl": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg",
+  "details": "Categor\\u00edas (Nivel Interclubes):\\n- Primera\\n- Segunda\\n- Tercera\\n- Cuarta\\n- Sin categor\\u00eda \\n\\nModalidad:\\n\\n- Dobles\\n- En las categor\\u00edas con m\\u00e1s de 4 parejas se ubicaran en cuadros para garantizar 3 partidos.\\n- En las categor\\u00edas donde solo se inscriban 3 parejas, se jugar\\u00e1n 2 partidos \\u00fanicamente.\\n- En las categor\\u00edas donde no se inscriban al menos 3 parejas, no se jugar\\u00e1 la categor\\u00eda.\\n- Los partidos ser\\u00e1n a 1 PRO set (a 8 games), sin ventaja, match tiebreak a 10 en caso de 7-7.\\n- Bolas por cuenta de los jugadores.\\n- Al inscribirse se le preguntar\\u00e1 qui\\u00e9n es la pareja de dobles. La pareja de dobles tambi\\u00e9n debe inscribirse al evento.\\n- Se cobrar\\u00e1 una cuota de 40.000 pesos por persona para cubrir caddies y otros.\\n\\nTorneo UTR Verified. Para jugar es requisito registrarse.",
+  "utrType": {
+    "id": 2,
+    "value": "sanctioned",
+    "label": "Verified UTR Event",
+    "description": "Must follow Verified Event Rules to count for Verified UTR rating."
+  },
+  "eventType": {
+    "id": 7,
+    "value": "match_play",
+    "label": "Match Play",
+    "description": "Less structured schedule of play. Match players up when they arrive and post scores!"
+  },
+  "surfaceType": null,
+  "eventPermissionType": {
+    "id": 1,
+    "value": "public",
+    "label": "Public",
+    "description": "Anyone can view and register for this event."
+  },
+  "paidHits": {
+    "coachingExperienceStatus": null,
+    "coachingExperienceTypeId": null,
+    "experienceStatus": null,
+    "experienceTypeId": null,
+    "player": {
+      "singlesUtr": 5.35603531999888,
+      "ratingStatusSingles": "Projected",
+      "ratingProgressSingles": 0,
+      "doublesUtr": 3.738188315188686,
+      "ratingStatusDoubles": "Projected",
+      "ratingProgressDoubles": 0,
+      "myUtrSingles": 5.0049209110228885,
+      "myUtrDoubles": 4.077217188043435,
+      "myUtrStatusSingles": "Rated",
+      "myUtrStatusDoubles": "Rated",
+      "ratingChoice": "VerifiedSinglesUTR"
+    }
+  },
+  "verificationFee": 0.0,
+  "allowOffPlatformPayments": true,
+  "priceRange": "40,000 Entry Fees",
+  "priceRangeShort": "40,000 Entry Fees",
+  "eventRegions": [],
+  "scheduleType": {
+    "id": 1,
+    "value": "matchsheet",
+    "label": "Match Sheet",
+    "description": "Match Sheet schedule type"
+  },
+  "eventClubJoinRequestType": {
+    "id": 2,
+    "value": "join",
+    "label": "Registrants become Members",
+    "description": "Registered players will become members by default but have an opt-out. "
+  },
+  "currentMember": {
+    "eventDirectorRole": {
+      "id": 1,
+      "value": "admin",
+      "label": "Admin",
+      "description": "Can modify any aspect of the event."
+    },
+    "registrationDetails": [
+      {
+        "divisionId": 210295,
+        "partners": [],
+        "paymentStatusType": {
+          "id": 3,
+          "value": "free",
+          "label": "Free",
+          "description": null
+        },
+        "registrationStatus": "Registered",
+        "paymentStatus": "Free",
+        "registeredDate": "October 9, 2022 9:42pm -05"
+      }
+    ],
+    "answers": [{ "questionId": 80987, "answer": "A\\u00fan no tengo." }],
+    "isPlaying": true,
+    "clubMemberRole": { "id": 2, "value": "Admin", "isActive": true }
+  },
+  "photoImages": {
+    "default": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg",
+    "banner": {
+      "oneX": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg?size=1X&type=banner",
+      "twoX": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg?size=2X&type=banner",
+      "threeX": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg?size=3X&type=banner"
+    },
+    "dashboard": {
+      "oneX": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg?size=1X&type=dashboard",
+      "twoX": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg?size=2X&type=dashboard",
+      "threeX": "130977/images/banner/381e80f9-5222-43ab-affa-1f4948e442a2.jpg?size=3X&type=dashboard"
+    }
+  },
+  "hasPrizeMoney": false,
+  "prizeMoney": null,
+  "prizeMoneyText": null,
+  "prizeMoneyTextShort": null,
+  "eventSettings": {
+    "id": "45a6fb53-9ef3-409d-392d-08daa93684c7",
+    "eventId": 130977,
+    "gameType": "",
+    "competitionType": "",
+    "isConference": false
+  }
+}

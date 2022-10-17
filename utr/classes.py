@@ -5,6 +5,7 @@ __email__ = "userlerueda@gmail.com"
 __maintainer__ = "Luis Rueda <userlerueda@gmail.com>"
 
 import json
+from asyncio import events
 from typing import List
 
 import daiquiri
@@ -60,6 +61,17 @@ class UTR(object):
         response = self.session.get(url)
         if response.ok is False:
             raise Exception(f"Error getting club: {response.text}")
+        return response.json()
+
+    def get_event(self, event_id: int) -> dict:
+        """Get event details."""
+        uri = f"/v1/tms/events/{event_id}"
+        url = f"{self.url}{uri}"
+        response = self.session.get(url)
+        if response.ok is False:
+            raise Exception(
+                f"Error getting details for event {event_id}: {response.text}"
+            )
         return response.json()
 
     def get_player(self, player_id: str) -> dict:
