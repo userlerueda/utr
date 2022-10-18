@@ -31,7 +31,6 @@ def get_registered_players(ctx: dict, event_id: int):
     registered_players = []
     my_utr.login()
     event_details = my_utr.get_event(event_id)
-    breakpoint()
     for registered_player_full_details in event_details.pop(
         "registeredPlayers", []
     ):
