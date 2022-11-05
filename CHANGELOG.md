@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add option to get results for player
 - Add option to get details for event
 - Add option to submit score as verified
+- Add option to delete score
 
 ### Fixed
 

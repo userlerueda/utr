@@ -85,6 +85,29 @@ class UTR(object):
 
         return response.json()
 
+    def delete_score(self, score_id: int) -> dict:
+        """Delete Score."""
+        uri = f"/v1/score/{score_id}"
+        url = f"{self.url}{uri}"
+        response = self.session.delete(url)
+        if response.ok is False:
+            LOGGER.warning(
+                "Problem while deleting score: (%s) %s",
+                response.status_code,
+                response.text,
+            )
+            response.raise_for_status()
+
+        if response.json().get("error") is not None:
+            LOGGER.warning(
+                "Problem while deleting score: (%s) %s",
+                score_id,
+                response.json().get("error"),
+            )
+            return False
+
+        return True
+
     def get_score(self, score_id: int) -> dict:
         """Get Score ID."""
 
