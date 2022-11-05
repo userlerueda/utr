@@ -179,6 +179,7 @@ class UTR(object):
         exclude_from_rating: bool = False,
         dry_run: bool = False,
         result_id: int = None,
+        verified: bool = False,
     ):
         """Post Club Match Results."""
         uri = "/v1/score/submit"
@@ -192,13 +193,15 @@ class UTR(object):
             "completed": True,
             "clubId": f"{club_id}",
         } | score
+
+        if verified:
+            payload["resultSourceType"] = 0
         if result_id:
             payload["resultId"] = result_id
         if dry_run:
             LOGGER.info(json.dumps(payload, indent=2))
         else:
             response = self.session.post(url, json=payload)
-            # response.raise_for_status()
             if response.ok:
                 winner1_name = "{} {}".format(
                     response.json()["result"]["players"]["winner1"][
@@ -219,6 +222,10 @@ class UTR(object):
                 )
                 LOGGER.info("Reported winner was: %s", winner1_name)
                 LOGGER.info("Reported loser was: %s", loser1_name)
+                LOGGER.info(
+                    "Reported score was: %s",
+                    response.json()["result"]["score"],
+                )
                 LOGGER.info(
                     "Reported score was: %s",
                     response.json()["result"]["score"],
