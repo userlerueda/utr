@@ -35,6 +35,9 @@ def score():
     "--result-id",
     help="Result ID for an existing result, this will update the results",
 )
+@click.option(
+    "--verified/--no-verified", help="Result is UTR Verified", default=False
+)
 def post(
     ctx: dict,
     date: str,
@@ -43,6 +46,7 @@ def post(
     score: str,
     dry_run: str,
     result_id: int,
+    verified: bool,
 ):
     """Report Club Match Score."""
     club_id = Settings().dict().get("club_id")
@@ -65,6 +69,7 @@ def post(
             },
             dry_run=dry_run,
             result_id=result_id,
+            verified=verified,
         )
     except Exception as err:
         LOGGER.error("Score was not submitted: %s", err, exc_info=not dry_run)
