@@ -89,5 +89,20 @@ def get(ctx: dict, result_id: int):
         LOGGER.error("Score was not submitted: %s", err)
 
 
+@click.command()
+@click.pass_context
+@click.argument("result-id")
+def delete(ctx: dict, result_id: int):
+    """Delete Club Match Score."""
+    my_utr: UTR = ctx.obj["my_utr"]
+    my_utr.login()
+
+    try:
+        my_utr.delete_score(result_id)
+    except Exception as err:
+        LOGGER.error("Score was not deleted: %s", err)
+
+
+score.add_command(delete)
 score.add_command(post)
 score.add_command(get)
