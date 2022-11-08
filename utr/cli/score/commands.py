@@ -4,6 +4,8 @@ __author__ = "Luis Rueda"
 __email__ = "userlerueda@gmail.com"
 __maintainer__ = "Luis Rueda <userlerueda@gmail.com>"
 
+import json
+
 import click
 import daiquiri
 
@@ -84,9 +86,10 @@ def get(ctx: dict, result_id: int):
     my_utr.login()
 
     try:
-        my_utr.get_score(result_id)
+        result = my_utr.get_result(result_id)
     except Exception as err:
         LOGGER.error("Score was not submitted: %s", err)
+    print(json.dumps(result, indent=2))
 
 
 @click.command()
