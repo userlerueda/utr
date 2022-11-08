@@ -5,7 +5,6 @@ __email__ = "userlerueda@gmail.com"
 __maintainer__ = "Luis Rueda <userlerueda@gmail.com>"
 
 import json
-from asyncio import events
 from typing import List
 
 import daiquiri
@@ -41,6 +40,44 @@ class UTR(object):
         )
         if response.ok is False:
             raise Exception(f"Error logging in: {response.text}")
+
+    def change_member_type(
+        self,
+        club_id: int,
+        player_id: int,
+        member_type: str,
+        dry_run: bool = False,
+    ):
+        """Change member type for club."""
+        player = self.get_player(player_id)
+        member_id = player.get("memberId")
+        if member_id:
+            LOGGER.debug(
+                "Changing player type for '%s %s' with memberId: '%s' to: '%s'",
+                player.get("firstName"),
+                player.get("lastName"),
+                member_id,
+                member_type,
+            )
+        else:
+            LOGGER.error(
+                "There was a problem retrieving memberId. Player details are: '%s'",
+                player,
+            )
+
+        uri = f"/v1/club/{club_id}/enterprise/member/updatetype"
+        url = f"{self.url}{uri}"
+        payload = {
+            "memberId": member_id,
+            "isPhysicalMember": member_type == "physical",
+        }
+        if dry_run:
+            LOGGER.info("Would be sending '%s' to '%s'", payload, uri)
+            return None
+        else:
+            response = self.session.post(url, json=payload)
+            response.raise_for_status()
+            return response.text
 
     def get_club_members(self, club_id: int, count: int = 50) -> dict:
         """Get Club members."""
@@ -108,17 +145,16 @@ class UTR(object):
 
         return True
 
-    def get_score(self, score_id: int) -> dict:
+    def get_result(self, result_id: int) -> dict:
         """Get Score ID."""
 
-        uri = f"/v1/score/{score_id}"
+        uri = f"/v1/result/{result_id}"
         url = f"{self.url}{uri}"
-        # url = f"https://api.universaltennis.com/v1/score/{score_id}"
 
         response = self.session.get(url)
         if response.ok is False:
             LOGGER.warning(
-                "Problem while retrieving score: (%s) %s",
+                "Problem while retrieving result: (%s) %s",
                 response.status_code,
                 response.text,
             )
@@ -215,6 +251,7 @@ class UTR(object):
             "excludeFromRating": exclude_from_rating,
             "completed": True,
             "clubId": f"{club_id}",
+            "event": {"name": "Retos", "id": None},
         } | score
 
         if verified:

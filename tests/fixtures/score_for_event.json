@@ -1,0 +1,16 @@
+{
+  "date": "2022-11-05T20:29:38.000Z",
+  "teamType": "S",
+  "isWinner": true,
+  "matchId": "0cac360e-91b6-4c2b-9163-54c72d0cee1f",
+  "winner1": { "id": 3523870 },
+  "loser1": { "id": 3524912 },
+  "winnerSet1": "6",
+  "loserSet1": "0",
+  "winnerSet2": "6",
+  "loserSet2": "2",
+  "winnerSet3": "",
+  "loserSet3": "",
+  "resultSourceType": 0,
+  "completed": true
+}
